@@ -1,11 +1,11 @@
 {
-  "name": "cypress-plugin-snapshots",
-  "version": "1.4.4",
+  "name": "@gjoneshpt/cypress-plugin-snapshots",
+  "version": "1.4.5",
   "description": "Cypress snapshot functionality for data",
-  "homepage": "https://github.com/meinaart/cypress-plugin-snapshots",
+  "homepage": "https://github.com/cooperjones/cypress-plugin-snapshots",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meinaart/cypress-plugin-snapshots.git"
+    "url": "https://github.com/cooperjones/cypress-plugin-snapshots.git"
   },
   "types": "types/index.d.ts",
   "files": [

@@ -89,7 +89,7 @@ function compareImageSizes(expected, actual) {
     actual.height === expected.height;
 }
 
-function compareImages(expected, actual, diffFilename, config) {
+function compareImages(expected, actual, diffFilename, {pixelThreshold=0.05, ...config}) {
   let passed = false;
   rimraf(diffFilename);
 
@@ -106,7 +106,7 @@ function compareImages(expected, actual, diffFilename, config) {
 
     const imageConfig = merge({}, DEFAULT_IMAGE_CONFIG, config);
     const pixelmatchConfig = {
-      threshold: 0.01,
+      threshold: pixelThreshold,
     };
 
     const imageWidth = actual.image.width;
